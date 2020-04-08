@@ -1,0 +1,9 @@
+.form-background {
+    @screen md {
+        @apply bg-no-repeat;
+
+        background-image: url("images/person-overweight.jpg"),
+            url("images/person-fit.jpg");
+        background-position: left -50px center, right -50px center;
+    }
+}

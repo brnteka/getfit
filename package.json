@@ -1,0 +1,33 @@
+{
+  "name": "howtonotgetfat-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&&gulp",
+    "build": "set NODE_ENV=production&&gulp build"
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-inject": "^5.0.5",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  }
+}

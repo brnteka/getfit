@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="h-full" lang="ro">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cum să nu te îngrași? Află acum!</title>
+    <!--  inject:css-->
+    <link rel="stylesheet" href="style.css">
+    <!--  endinject-->
+  </head>
+  <body class="min-h-full leading-tight font-arimo">
+    <div class="fixed overflow-auto top-0 left-0 w-full h-full flex bg-red bg-center bg-no-repeat p-05 md:p-0" style="background-image: url('images/background-light.png'); background-size: auto 100%;">
+      <div class="form-container max-w-3xl flex flex-col w-full m-auto rounded-lg bg-white form-background overflow-hidden">
+        <form class="flex-grow flex flex-col">
+          <input class="absolute opacity-0 h-0" id="step-2" type="checkbox"/>
+          <div class="flex-grow flex flex-col" id="part-1">
+            <div class="p-15 flex-grow md:p-4">
+              <h1 class="border-b-2 border-gray-100 text-center font-bold text-lg md:text-xl pb-1 mb-1 md:pb-2 md:mb-2">Cum să nu te îngrași? Află acum!</h1>
+              <h2 class="font-bold text-center mb-3 text-md md:text-lg">Dacă vă <span class="text-red">mișcați puțin</span>, <br/>este important <span class="text-blue-dark">să mâncați corect!</span></h2><img class="mx-auto" src="images/sofa.png" alt=""/>
+            </div>
+            <div class="p-15 bg-blue-light md:p-4">
+              <div class="text-center font-bold mb-25"><span>Noi vom ajuta:</span>
+                <ul class="inline">
+                  <li class="inline-block"><img class="inline mx-05" src="images/tick.png"/>să nu creșteți în greutate</li>
+                  <li class="inline-block"><img class="inline mx-05" src="images/tick.png"/>A alege o dietă simplă</li>
+                  <li class="inline-block"><img class="inline mx-05" src="images/tick.png"/>Să mâncați eftin</li>
+                </ul>
+              </div>
+              <div class="text-center">
+                <label class="cursor-pointer inline-block rounded-full bg-blue-dark text-white py-15 leading-none px-4 text-md font-bold" for="step-2">înainte<img class="inline ml-05" src="images/button-arrows.png"/></label>
+              </div>
+            </div>
+          </div>
+          <div class="flex-grow flex flex-col" id="part-2">
+            <div class="p-15 flex-grow md:p-4">
+              <h1 class="border-b-2 border-gray-100 text-center font-bold text-lg md:text-xl pb-1 mb-1 md:pb-2 md:mb-2">Aflați, sunteți în formă?</h1>
+              <div class="mx-auto text-sm md:w-1/2 mt-2 md:mt-4">
+                <div class="mb-2 flex items-center">
+                  <div class="w-4/12">
+                    <label class="font-bold" for="height">Ânalțimea, cm</label>
+                  </div>
+                  <div class="w-8/12">
+                    <input class="rounded-full bg-gray-100 border border-gray-200 p-1 block w-full" type="text" value="160" id="height"/>
+                  </div>
+                </div>
+                <div class="mb-2 flex items-center">
+                  <div class="w-4/12">
+                    <label class="font-bold" for="weight">Greutatea, kg</label>
+                  </div>
+                  <div class="w-8/12">
+                    <input class="rounded-full bg-gray-100 border border-gray-200 p-1 block w-full" type="text" value="80" id="weight"/>
+                  </div>
+                </div>
+                <div class="mb-2 flex items-center">
+                  <div class="w-4/12">
+                    <label class="font-bold" for="sex">Genul</label>
+                  </div>
+                  <div class="w-8/12">
+                    <select class="rounded-full bg-gray-100 border border-gray-200 p-1 block w-full bg-no-repeat pr-4" name="" id="sex">
+                      <option value="female">Feminin</option>
+                      <option value="male">Masculin</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-2 flex items-center">
+                  <div class="w-4/12">
+                    <label class="font-bold" for="age">Vârsta, anul</label>
+                  </div>
+                  <div class="w-8/12">
+                    <input class="rounded-full bg-gray-100 border border-gray-200 p-1 block w-full" type="text" value="32" id="age"/>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4/12">
+                    <label class="font-bold" for="activity">Activitatea sportivă</label>
+                  </div>
+                  <div class="w-8/12">
+                    <select class="rounded-full bg-gray-100 border border-gray-200 p-1 block w-full bg-no-repeat pr-4" name="" id="activity">
+                      <option value="low">scăzută</option>
+                      <option value="average">medie</option>
+                      <option value="high">ânaltă</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-15 bg-blue-light md:p-4">
+              <div class="text-center">
+                <button class="cursor-pointer inline-block rounded-full bg-blue-dark text-white py-15 leading-none px-4 text-md font-bold" type="submit">Aflați<img class="inline ml-05" src="images/button-arrows.png"/></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--  inject:js-->
+    <!--  endinject-->
+  </body>
+</html>

@@ -1,0 +1,5 @@
+.form-container {
+    @screen md {
+        min-height: 615px;
+    }
+}

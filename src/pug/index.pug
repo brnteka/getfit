@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+html(lang="ro").h-full
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Cum să nu te îngrași? Află acum!
+        //  inject:css
+        //  endinject
+    body.min-h-full.leading-tight.font-arimo
+        .fixed.overflow-auto.top-0.left-0.w-full.h-full.flex.bg-red.bg-center.bg-no-repeat.p-05(style="background-image: url('images/background-light.png'); background-size: auto 100%;" class="md:p-0")
+            .form-container.max-w-3xl.flex.flex-col.w-full.m-auto.rounded-lg.bg-white.form-background.overflow-hidden
+                form.flex-grow.flex.flex-col
+                    input#step-2(type="checkbox").absolute.opacity-0.h-0
+                    .flex-grow.flex.flex-col#part-1
+                        .p-15.flex-grow(class="md:p-4")
+                            h1.border-b-2.border-gray-100.text-center.font-bold(class="text-lg md:text-xl pb-1 mb-1 md:pb-2 md:mb-2") Cum să nu te îngrași? Află acum!
+                            h2.font-bold.text-center.mb-3(class="text-md md:text-lg") Dacă vă 
+                                span.text-red mișcați puțin
+                                |, 
+                                br
+                                | este important 
+                                span.text-blue-dark să mâncați corect!
+                            img.mx-auto(src="images/sofa.png", alt="")
+                        .p-15.bg-blue-light(class="md:p-4")
+                            .text-center.font-bold.mb-25
+                                span Noi vom ajuta:
+                                ul.inline
+                                    li.inline-block
+                                        img(src="images/tick.png").inline.mx-05
+                                        | să nu creșteți în greutate
+                                    li.inline-block
+                                        img(src="images/tick.png").inline.mx-05
+                                        | A alege o dietă simplă
+                                    li.inline-block
+                                        img(src="images/tick.png").inline.mx-05
+                                        | Să mâncați eftin
+                            .text-center
+                                label(for="step-2").cursor-pointer.inline-block.rounded-full.bg-blue-dark.text-white.py-15.leading-none.px-4.text-md.font-bold înainte
+                                    img.inline.ml-05(src="images/button-arrows.png")
+                    .flex-grow.flex.flex-col#part-2
+                        .p-15.flex-grow(class="md:p-4")
+                            h1.border-b-2.border-gray-100.text-center.font-bold(class="text-lg md:text-xl pb-1 mb-1 md:pb-2 md:mb-2") Aflați, sunteți în formă?
+                            .mx-auto.text-sm(class="md:w-1/2 mt-2 md:mt-4")
+                                .mb-2.flex.items-center
+                                    div(class="w-4/12")
+                                        label(for="height").font-bold Ânalțimea, cm
+                                    div(class="w-8/12")
+                                        input(type="text" value="160")#height.rounded-full.bg-gray-100.border.border-gray-200.p-1.block.w-full
+                                .mb-2.flex.items-center
+                                    div(class="w-4/12")
+                                        label(for="weight").font-bold Greutatea, kg
+                                    div(class="w-8/12")
+                                        input(type="text" value="80")#weight.rounded-full.bg-gray-100.border.border-gray-200.p-1.block.w-full
+                                .mb-2.flex.items-center
+                                    div(class="w-4/12")
+                                        label(for="sex").font-bold Genul
+                                    div(class="w-8/12")
+                                        select(name="")#sex.rounded-full.bg-gray-100.border.border-gray-200.p-1.block.w-full.bg-no-repeat.pr-4
+                                            option(value="female") Feminin
+                                            option(value="male") Masculin
+                                .mb-2.flex.items-center
+                                    div(class="w-4/12")
+                                        label(for="age").font-bold Vârsta, anul
+                                    div(class="w-8/12")
+                                        input(type="text" value="32")#age.rounded-full.bg-gray-100.border.border-gray-200.p-1.block.w-full
+                                .flex.items-center
+                                    div(class="w-4/12")
+                                        label(for="activity").font-bold Activitatea sportivă
+                                    div(class="w-8/12")
+                                        select(name="")#activity.rounded-full.bg-gray-100.border.border-gray-200.p-1.block.w-full.bg-no-repeat.pr-4
+                                            option(value="low") scăzută
+                                            option(value="average") medie
+                                            option(value="high") ânaltă
+                        .p-15.bg-blue-light(class="md:p-4")
+                            .text-center
+                                button(type="submit").cursor-pointer.inline-block.rounded-full.bg-blue-dark.text-white.py-15.leading-none.px-4.text-md.font-bold Aflați
+                                    img.inline.ml-05(src="images/button-arrows.png")
+        //  inject:js
+        //  endinject

@@ -1,0 +1,11 @@
+#part-2 {
+	@apply hidden ;
+}
+
+#step-2:checked ~ #part-2 {
+	@apply flex;
+}
+
+#step-2:checked ~ #part-1 {
+	@apply hidden;
+}
