@@ -47,6 +47,10 @@ module.exports = {
 			}
 		},
 		extend: {
+			maxWidth: {
+				'1/2': '50%',
+				'3/4': '75%',
+			}
 		}
 	},
 	variants: {},

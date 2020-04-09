@@ -3,9 +3,6 @@ select {
   -webkit-appearance: none;
   background-image: url('images/arrow.svg');
   background-position: right 20px center;
-
-  @apply bg-no-repeat;
-
 }
 
 select::-ms-expand {

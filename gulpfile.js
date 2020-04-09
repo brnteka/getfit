@@ -4,7 +4,6 @@ var inject = require("gulp-inject");
 var postCss = require("gulp-postcss");
 var browserSync = require("browser-sync");
 var pug = require("gulp-pug");
-var replace = require("gulp-replace");
 var del = require('del');
 
 var server = browserSync.create();
@@ -21,7 +20,7 @@ function getPath() {
 var path = getPath();
 
 function clearBuildFolder() {
-	return del(['./dist/*', '!./dist/'], {dryRun: true});
+	return del(['./dist/**', '!./dist/'], {dryRun: false});
 }
 
 // BrowserSync
@@ -51,14 +50,6 @@ function reloadServer(cb) {
 //         })
 //     );
 // }
-
-//Replace
-function replacePaths() {
-	return gulp
-		.src(["./build/**/*.html"])
-		.pipe(replace("kek", "lol"))
-		.pipe(gulp.dest(path));
-}
 
 //Move assets
 var filesToMove = ["./src/images/**/*.*"];
@@ -97,7 +88,7 @@ function html() {
 //Inject
 function assemble() {
 	return gulp
-		.src("./build/**/*.html")
+		.src(path + "**/*.html")
 		.pipe(
 			inject(
 				gulp.src(["./build/**/*.css", "./build/**/*.js"], {
